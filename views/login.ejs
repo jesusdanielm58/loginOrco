@@ -1,0 +1,22 @@
+<%- include("partials/head",{title:"login"}) %>
+
+<body>
+    <%- include("partials/nav") %>
+    <main class="center">
+        <form action="/login" method="POST">
+            <h2>Login</h2>
+            <label for="user">User</label>
+            <input type="text" placeholder="user" name="user" id="user">
+            <label for="password">password</label>
+            <input type="password" placeholder="password" name="password" id="password">
+            <div class=error>
+                <% if  (error) { %>
+                    <p><%= error %></p>
+               <% } %>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+
+    </main>
+    <%- include("partials/footer") %>
+</body>

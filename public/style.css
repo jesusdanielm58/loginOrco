@@ -1,0 +1,102 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f1f1f1;
+    background-image: url(./double-bubble-dark.png);
+    color:white;
+}
+
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    padding:20px 20px;
+    color:white;
+    background-color: #333;
+}
+
+nav a{
+    text-decoration: none;
+    margin:0 10px;
+    color:white;
+}
+
+nav p{
+    margin-right: auto;
+}
+
+main{
+    flex:1;
+    padding:20px 20px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display:flex;
+    flex-flow: column;
+    padding:20px;
+    background-color: white;
+    border-radius: 20px;
+   box-shadow: 10px 5px 5px #00000052;
+   min-width: 300px;
+   color:black;
+}
+
+form label{
+    margin: 10px 0; 
+}
+form h2{
+    margin-bottom: 10px;
+}
+form input[type="text"],form input[type="password"]{
+    padding:5px;
+}
+form input[type="submit"]{
+    margin-top: 10px;
+    max-width: 75px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+footer{
+    justify-self: flex-end;
+    text-align: center;
+    padding:20px 20px;
+    color:white;
+    background-color: #333;
+}
+
+.error{
+    color:crimson;
+}
+
+.logout{
+    margin-left: 30px;
+    color:goldenrod;
+}
+
+.content{
+    padding:20px;
+    background-color: white;
+    border-radius: 20px;
+   box-shadow: 10px 5px 5px #00000052;
+   min-width: 300px;
+   color:black;
+   width: fit-content;
+    
+}
+.content h2{
+    font-size:1.2rem;
+    margin-bottom: 10px;
+}

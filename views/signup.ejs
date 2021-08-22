@@ -1,0 +1,22 @@
+<%- include("partials/head",{title:"Sign up"}) %>
+
+<body>
+    <%- include("partials/nav") %>
+    <main class="center">
+        <form action="/signup" method="POST">
+            <h2>Sign up</h2>
+            <label for="user">User</label>
+            <input type="text" placeholder="user" name="user" id="user">
+            <label for="password">password</label>
+            <input type="password" placeholder="password" name="password" id="password">
+            <div class=error>
+                <% if  (duplicado) { %>
+                    <p>user already register</p>
+               <% } %>
+            </div>
+            <input type="submit" value="Sign up">
+        </form>
+
+    </main>
+    <%- include("partials/footer") %>
+</body>

@@ -1,0 +1,12 @@
+<nav>
+
+    <p>Login Orco</p>
+
+    <% if (user) { %>
+        <span>Welcome: <%= user.user %></span>
+        <a href="/logout" class="logout">log out</a>
+    <% } else { %>
+    <a href="/login">log In</a>
+    <a href="/signup">Sign up</a>
+    <% } %>
+</nav>
